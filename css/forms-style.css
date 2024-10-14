@@ -1,0 +1,106 @@
+/* Estilos formularios */
+.seccion-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../assets/mega-man-computer-data.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 70%;
+    margin: 0 auto; 
+    padding: 2%; 
+    border-radius: 10px;
+}
+
+.formulario h2{
+    margin-bottom: 2%;
+    font-size: 1.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; 
+    color:white;
+    font-size: 1.3rem;
+    text-align:left;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 15px;
+    width: 100%; 
+    padding: 10px; 
+}
+
+.formulario button {
+    background-color: #024686; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 0.5rem 1rem;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    margin-bottom: 2%; 
+}
+
+.formulario button:hover {
+    background-color: #023351; 
+}
+
+@media (max-width: 320px){
+    
+    .seccion-formulario input{
+        padding: 2%;
+    }
+    .seccion-formulario label{
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    .seccion-formulario h2{
+        font-size: 1.5rem;
+        padding-bottom: 10%;
+    }
+    
+    .juego button{ 
+        background-color: #024686; 
+        color: white; 
+        border: none; 
+        border-radius: 5px; 
+        padding: 0.5rem 1rem;
+        cursor: pointer; 
+        transition: background-color 0.3s;
+        margin-bottom: 2%;
+        
+    }
+    button:hover {
+        background-color: #025a91; 
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+
+    .formulario{
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .formulario{
+        max-width: 45%;
+    }
+}
+
+@media (min-width:1025px){
+    .formulario{
+        max-width: 25%;
+    }
+}
